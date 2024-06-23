@@ -1,0 +1,99 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    padding: 1rem;
+    background: linear-gradient(to bottom, rgba(0, 128, 0, 0.395), rgba(0, 128, 0, 0.8));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.largeBold{
+    font-size: large;
+    font-weight: bolder;
+}
+.m-10{
+    margin-block:10px;
+}
+
+.heading{
+    color:green;
+}
+.formContainer {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    max-width: 950px;
+}
+.form{
+    margin-block:20px;
+    display: flex; 
+    flex-direction: column; 
+    gap:12px;
+}
+.formElement {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px; /*util mb*/
+}
+
+.formElement textarea,
+.formElement input,
+.formElement select {
+    /* width: 100%; */
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+fieldset{
+    padding: 1rem;
+    max-height: 100px;
+    gap: 10px;
+}
+fieldset legend{
+    font-size: large;
+}
+
+label{
+    font-size: large;
+    font-weight: bolder;
+    margin-bottom: 0.5rem;
+}
+
+input::placeholder, select{
+    color:green;
+}
+
+button {
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: rgba(0, 128, 0, 0.733);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: green;
+}
+

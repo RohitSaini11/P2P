@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <section class="formContainer flex-col wrap">
+        <h1 class="heading">Survey Form</h1>
+        
+        <p class="description m-10" >Feel free to answer the questions below based on your experience and opinion. If you are not convenient in answering a paritcular question Please skip it by answering "NO".Every answer would be very appreciated.Thank you for your time.</p>
+
+        <form class="form">
+            
+            <div class="formElement">
+                <label for="userName">Your Name</label>
+                <input id="userName" type="text" placeholder="Enter Your Name">
+            </div>
+
+            <div class="formElement">
+                <label for="userEmail">Your Email Address</label>
+                <input id="userEmail" type="email" placeholder="user@email.com">
+            </div>
+            
+            <div class="formElement">
+                <label for="UserPhone">Your Phone Number</label>
+                <input id="UserPhone" type="tel" placeholder="9999999999">
+            </div>
+            
+            <div class="formElement">
+                <label for="userLocation">Where Do You Live</label>
+                <select id="userLocation" >
+                    <option value="null" disabled selected>Select</option>
+                </select>
+            </div>
+            
+                <fieldset class="formElement wrap">
+                <legend>Age</legend>
+
+                <div class="">
+                    <input id="ageG1" type="radio" name="userAge">
+                    <label for="ageG1">15-20</label> 
+                </div>
+
+                <div>
+                    <input id="ageG2" type="radio" name="userAge">
+                    <label for="ageG2">21-30</label> 
+                </div>
+
+                <div>
+                    <input id="ageG3" type="radio" name="userAge">
+                    <label for="ageG3">31-40</label> 
+                </div>
+                    
+                <div>
+                    <input id="ageG4" type="radio" name="userAge">
+                    <label for="ageG4">41-50</label>
+                </div>
+
+                <div>
+                    <input id="ageG5" type="radio" name="userAge">
+                    <label for="ageG5">Prefer not to say</label>
+                </div>
+            </fieldset>
+
+            <div>
+                <p class="largeBold m-10">How would you rate your proficiency in coding</p>
+                
+                <div class="m-10">
+                    <input id="beginner" type="radio" name="proficiency">
+                    <label for="beginner">Beginner</label> <br>
+                </div>
+
+                <div class="m-10">
+                    <input id="intermidiate" type="radio" name="proficiency">
+                    <label for="intermidiate">Intermidiate</label> <br>
+                </div>
+
+                <div class="m-10">
+                    <input id="Advance" type="radio" name="proficiency">
+                    <label for="Advance">Advance</label> 
+                </div>
+            </div> 
+        
+                
+            <div>
+                <p class="largeBold m-10">How you ever appeared in a coding contest?</p>
+                
+                <div class="m-10">
+                    <input id="yes" type="radio" name="condingContest">
+                    <label for="yes">Yes</label> <br>
+                </div>
+
+                <div class="m-10">
+                    <input id="no" type="radio" name="condingContest">
+                    <label for="no">No</label> 
+                </div>
+
+            </div>  
+
+            <div class="formElement">
+                <label for="textArea1">Discuss what drives your passion for coding and outline your aspirations in the field.</label>
+                <textarea name="passion" id="textArea1"></textarea>
+            </div>
+
+            <div class="formElement">
+                <label for="textArea1">What are some of the challenges you face while coding?</label>
+                <textarea name="passion" id="textArea1"></textarea>
+            </div>
+
+            <div class="formElement">
+                <label for="textArea1">Please list the Data Structures you have a strong understanding of.</label>
+                <textarea name="passion" id="textArea1"></textarea>
+            </div>
+
+            <button type="submit">Submit Form</button>
+
+        </form>
+    </section>
+</body>
+</html>
