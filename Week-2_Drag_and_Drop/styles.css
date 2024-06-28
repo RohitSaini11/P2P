@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+    background: no-repeat center/cover url(carousel2.jpg)  ;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading{
+    text-align: center;
+    color:rgb(54, 53, 53)
+}
+.app-container{
+    padding: 30px;
+    border-radius: 10px;
+    background: rgba(245, 245, 220, 0.952);
+
+}
+.click-indicator{
+    text-decoration: underline;
+    color: green;
+    cursor: pointer;
+}
+
+.dropzone {
+    border: 2px dashed #ccc;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 40vmax ;
+}
+
+.dropzone.dragover {
+    border-color: #000;
+}
+
+.dropzone p{
+    cursor: default;
+}
+
+.file-list {
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.file-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.file-item img {
+    border-radius: 10px;
+    max-width: 100px;
+    margin-right: 10px;
+}
+
+.file-item textarea {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.file-item .actions {
+    display: flex;
+    align-items: center;
+}
+
+.file-item .actions button {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
